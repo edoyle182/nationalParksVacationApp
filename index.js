@@ -41,9 +41,7 @@ function getNationalParksList(state, maxResults) {
 
 function getReverseGeocode(latlng, elementID) {
   const splitLatLong = latlng.split(', ');
-  const googleLatLng = `latlng=${splitLatLong[0].substr(
-    4
-  )},${splitLatLong[1].substr(5)}`;
+  const googleLatLng = `latlng=${splitLatLong[0].substr(4)},${splitLatLong[1].substr(5)}`;
   const google_url = 'https://maps.googleapis.com/maps/api/geocode/json?';
   // const k1 = 'AIzaSyAa6D8GR';
   // const k2 = '7svXqoZ3K7LPT';
